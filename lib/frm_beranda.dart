@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+class Beranda extends StatefulWidget {
+  const Beranda({super.key});
+
+  @override
+  State<Beranda> createState() => _BerandaState();
+}
+
+class _BerandaState extends State<Beranda> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('TRANS'),
+        titleSpacing: 10,
+        leading: Icon(Icons.arrow_back),
+      ),
+      body: Row(),
+    );
+  }
+}
