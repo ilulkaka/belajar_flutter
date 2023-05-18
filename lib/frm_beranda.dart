@@ -12,9 +12,20 @@ class _BerandaState extends State<Beranda> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TRANS'),
+        title: Text('TRANSFER'),
         titleSpacing: 10,
         leading: Icon(Icons.arrow_back),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: <Color>[
+                  Color.fromARGB(255, 215, 115, 115),
+                  Color.fromARGB(255, 188, 221, 88)
+                ]),
+          ),
+        ),
       ),
       body: Row(),
     );
