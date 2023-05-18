@@ -21,11 +21,20 @@ class _BerandaState extends State<Beranda> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: <Color>[
-                  Color.fromARGB(255, 215, 115, 115),
+                  Color.fromARGB(255, 6, 95, 184),
                   Color.fromARGB(255, 188, 221, 88)
                 ]),
           ),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: new Icon(
+              Icons.call,
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: Row(),
     );
