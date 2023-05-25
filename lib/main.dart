@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pertamaq/belajar.dart';
+import 'package:flutter_pertamaq/buttonbar.dart';
+import 'package:flutter_pertamaq/frm_beranda.dart';
 import 'package:flutter_pertamaq/frm_login.dart';
+import 'package:flutter_pertamaq/home.dart';
+import 'package:flutter_pertamaq/layout_navbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const Frm_login(),
+      home: const Layoutnavbar(),
     );
   }
 }

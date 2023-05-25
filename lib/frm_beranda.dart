@@ -14,7 +14,7 @@ class _BerandaState extends State<Beranda> {
       appBar: AppBar(
         title: Text('TRANSFER'),
         titleSpacing: 10,
-        leading: Icon(Icons.arrow_back),
+        // leading: Icon(Icons.arrow_back),
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -36,7 +36,34 @@ class _BerandaState extends State<Beranda> {
           ),
         ],
       ),
-      body: Row(),
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
+            child: Column(
+              children: [
+                Container(
+                  height: 100,
+                  // width: 100,
+                  decoration: BoxDecoration(
+                      color: Colors.deepPurpleAccent,
+                      borderRadius: BorderRadius.circular(10)),
+                ),
+                Positioned(
+                  bottom: 48.0,
+                  left: 10.0,
+                  right: 10.0,
+                  child: Card(
+                    elevation: 8.0,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                  ),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
